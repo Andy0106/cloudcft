@@ -1,0 +1,6 @@
+data_assignment::= Variable (ignore)'='(ignore)value(ignore)';'';
+Variable::= data_type ignore name;
+data_type::= 'num';
+name::= [_a-zA-Z][0-9a-zA-Z];
+statement::= data_assignment;
+source_code::= statement+;
