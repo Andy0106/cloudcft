@@ -6,7 +6,7 @@ pub enum token_type {
     IGNORE,
     VARIABLE,
     STM_END,
-    EQUARE,
+    EQUAL,
 }
 pub struct Token(pub token_type, pub usize, pub Option<String>);
 
