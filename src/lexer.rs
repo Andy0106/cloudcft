@@ -19,5 +19,7 @@ pub struct Lexer{
     words: HashMap<String,Token>
 }
 impl Lexer{
-    
+    pub fn new(source: String){
+        
+    }
 }
