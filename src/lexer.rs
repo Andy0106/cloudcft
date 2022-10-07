@@ -9,6 +9,7 @@ pub struct Lexer {
     pub next_token_info: token_type,
     next_token: Token
 }
+
 impl Lexer {
     pub fn new(source: String) -> Self {
         Lexer {
@@ -20,3 +21,4 @@ impl Lexer {
         }
     }
 }
+
