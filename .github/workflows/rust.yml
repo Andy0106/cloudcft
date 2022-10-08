@@ -26,4 +26,6 @@ jobs:
       run: |
         git add .
         git commit -m "[chore] auto-format by workflow"
+        git config --global user.name "onion108"
+        git config --global user.email "zzy20080201@qq.com"
         git push
