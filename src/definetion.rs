@@ -1,11 +1,11 @@
 use std::collections::HashMap;
-pub enum token_type {
-    EOF,
-    NAME,
-    DATA_TYPE,
-    IGNORE,
-    VARIABLE,
-    STM_END,
-    EQUAL,
-    NONE
+pub enum TokenType {
+    Eof,
+    Name,
+    DataType,
+    Ignore,
+    Variable,
+    StmtEnd,
+    Equal,
+    None
 }
