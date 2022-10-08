@@ -1,7 +1,7 @@
 use super::definetion::TokenType;
-use std::collections::HashMap;
 pub struct Token(pub TokenType, pub usize, pub Option<String>);
 
+#[allow(unused)]
 pub struct Lexer {
     src: String,
     line: usize,

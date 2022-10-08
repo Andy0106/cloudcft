@@ -16,9 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
-      run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+    # - name: Build
+    #   run: cargo build --verbose
+    # - name: Run tests
+    #   run: cargo test --verbose
     - name: Format
       run: cargo fmt
+    - name: Store to repo
+      run: |
+        git add .
+        git commit -m "[chore] auto-format by workflow"
+        git push
