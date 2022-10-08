@@ -20,4 +20,15 @@ impl Lexer {
             next_token: Token(TokenType::None, 0, None),
         }
     }
+    pub fn scan_name(lexer: &Lexer) -> (usize, String) {
+        let codes = &lexer.src[lexer.ptr..];
+        let mut i = 0;
+        for c in codes.chars() {
+            match c {
+                '_' | 'a'..='z' | 'A'..='Z' | '0'..='9' => i += 1,
+                _ => break,
+            }
+        }
+        (i, codes[..i].to_string())
+    }
 }
