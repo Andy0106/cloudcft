@@ -1,5 +1,5 @@
-use std::collections::HashMap;
 use super::definetion::TokenType;
+use std::collections::HashMap;
 pub struct Token(pub TokenType, pub usize, pub Option<String>);
 
 pub struct Lexer {
@@ -7,7 +7,7 @@ pub struct Lexer {
     line: usize,
     ptr: usize,
     pub next_token_info: TokenType,
-    next_token: Token
+    next_token: Token,
 }
 
 impl Lexer {
@@ -17,8 +17,7 @@ impl Lexer {
             line: 0,
             ptr: 0,
             next_token_info: TokenType::None,
-            next_token: Token(TokenType::None, 0, None)
+            next_token: Token(TokenType::None, 0, None),
         }
     }
 }
-

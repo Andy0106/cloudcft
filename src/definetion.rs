@@ -7,5 +7,5 @@ pub enum TokenType {
     Variable,
     StmtEnd,
     Equal,
-    None
+    None,
 }
