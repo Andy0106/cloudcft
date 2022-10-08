@@ -1,4 +1,4 @@
-pub enum TokenType{
+pub enum TokenType {
     Eof,
     Name,
     DataType,
